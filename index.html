@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======================================================= -->
+    <!-- [CUSTOMIZE: TITLE] Replace with your name and major    -->
+    <!-- Contoh: Portfolio - Alex Pratama | Electrical Eng. UB   -->
+    <!-- ======================================================= -->
+    <title>Portfolio - Electrical Engineering Student</title>
+
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Boxicons (Icons Library) -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ======================================================= -->
+    <!-- NAVBAR / NAVIGATION BAR                                 -->
+    <!-- Links automatically highlight as you scroll (Scroll Spy) -->
+    <!-- ======================================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            
+            <!-- [CUSTOMIZE: LOGO / NAME] Change 'YourName' to your brand/name -->
+            <a href="#home" class="nav-logo">
+                <i class='bx bx-chip'></i>
+                <span>Farras</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class='bx bx-home'></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class='bx bx-user'></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <i class='bx bx-briefcase'></i> Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">
+                        <i class='bx bx-certification'></i> Certificates
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">
+                        <i class='bx bx-news'></i> Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class='bx bx-phone-call'></i> Contact
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================================================= -->
+    <!-- SECTION: HOME / HERO                                    -->
+    <!-- ======================================================= -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle">👋 Welcome to my portfolio</span>
+
+                <!-- [CUSTOMIZE: FULL NAME] Change to your full name -->
+                <h1 class="hero-title">Farras Ashrafi</h1>
+
+                <!-- [CUSTOMIZE: HERO SUMMARY] Change bio/intro text -->
+                <p class="hero-description">
+                    Electrical Engineering student at <span class="highlight">Universitas Brawijaya</span> and currently a researcher in <span class="highlight">Riset Teknologi &amp; Informasi Elektro</span>. Keen on modern control systems, robotics, and intelligent automation.
+                </p>
+
+                <!-- Call to action buttons -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class='bx bx-folder-open'></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class='bx bx-envelope'></i> Contact Info
+                    </a>
+                </div>
+
+                <!-- [CUSTOMIZE: HERO SOCIAL LINKS] Replace href with your profiles -->
+                <div class="hero-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="mailto:youremail@student.ub.ac.id" class="social-link" title="Email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image / Avatar (replace placeholder with <img> when ready) -->
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <!-- Placeholder (commented out):
+                    <div class="hero-image-placeholder">
+                        <i class='bx bx-user-pin'></i>
+                        <p>Your Photo</p>
+                    </div>
+                    -->
+                    <img src="images/profile.jpg" alt="Profile Photo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION: ABOUT ME                                       -->
+    <!-- ======================================================= -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Biography & Expertise</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left: Biography Content -->
+                <div class="about-content">
+                    <h3>Engineering Background</h3>
+
+                    <!-- [CUSTOMIZE: ABOUT TEXT] Edit your background story here -->
+                    <p>
+                        I am an Electrical Engineering student at Universitas Brawijaya, currently active as a researcher at Riset Teknologi &amp; Informasi. My primary academic and research interests center on modern control systems, dynamic system modeling, and advanced feedback control architectures.
+                    </p>
+                    <p>
+                        Passionate about bridging theoretical control engineering with applied robotics and embedded systems, I conduct research and experiments to design robust, intelligent, and real-time control solutions.
+                    </p>
+
+                    <!-- Quick Highlight Cards (Edit the numbers/text as needed) -->
+                    <div class="about-info-cards">
+                        <div class="info-card">
+                            <i class='bx bx-book-reader'></i>
+                            <h4>Semester 3</h4>
+                            <p>Electrical Engineering UB</p>
+                        </div>
+                        <div class="info-card">
+                            <i class='bx bx-code-block'></i>
+                            <h4>6+</h4>
+                            <p>Projects Built</p>
+                        </div>
+                        <div class="info-card">
+                            <i class='bx bx-certification'></i>
+                            <h4>4+</h4>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Skills (UB Electrical Engineering Semester 3) -->
+                <!-- [CUSTOMIZE: SKILLS] Change percentage in data-width="XX%" and <span>XX%</span> -->
+                <div class="about-skills">
+                    <h3>Skills & Competencies</h3>
+                    
+                    <!-- Skill 1: Electric Circuit Analysis (AC/DC) -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Electric Circuit Analysis (AC / DC)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2: Digital Electronics -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Digital Electronics & Logic Design</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3: Microcontrollers (Arduino / ESP32) -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Microcontrollers (Arduino / ESP32)</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4: C / C++ Programming -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>C / C++ for Embedded Systems</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5: MATLAB & Simulink -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>MATLAB & Simulink Simulation</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 6: Instrumentation & Measurement -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Measurement & Lab Instrumentation (Oscilloscope, DMM)</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 7: PCB Layout (KiCad / Proteus) -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>PCB Schematic & Layout (KiCad / Proteus)</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 8: Python -->
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Python for Data Analysis & Automation</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION: PROJECTS                                       -->
+    <!-- Split into: Personal Projects & Organization/Team       -->
+    <!-- Includes: Completed vs Ongoing Status Badges            -->
+    <!-- ======================================================= -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio Showcase</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- 
+                Category Filter Buttons:
+                - 'all'          : Shows all cards
+                - 'personal'     : Shows cards with data-category="personal"
+                - 'organization' : Shows cards with data-category="organization"
+            -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="personal">Personal Projects</button>
+                <button class="filter-btn" data-filter="organization">Organization & Team</button>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="projects-grid">
+                
+                <!-- =================================================== -->
+                <!-- [PROJECT 1: PERSONAL - COMPLETED]                  -->
+                <!-- HOW TO EDIT:                                        -->
+                <!-- 1. data-category="personal" or "organization"       -->
+                <!-- 2. status-badge completed OR status-badge ongoing   -->
+                <!-- =================================================== -->
+                <div class="project-card" data-category="personal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class='bx bx-chip'></i>
+                            <span>Embedded Project</span>
+                        </div>
+                        <!-- Links on hover: replace href with your GitHub repository -->
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="#projects" class="project-link" title="Details">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <!-- Badges: Category & Project Status -->
+                        <div class="project-badges">
+                            <span class="project-badge personal">Personal Project</span>
+                            <!-- [STATUS]: 'completed' or 'ongoing' -->
+                            <span class="status-badge completed"><i class='bx bx-check-circle'></i> Completed</span>
+                        </div>
+                        <h3>Autonomous PID Line Follower</h3>
+                        <p>Differential drive mobile robot with 8-channel infrared sensor array, implementing closed-loop PID control algorithm for high-speed tracking.</p>
+                        <div class="project-tags">
+                            <span>Arduino Nano</span>
+                            <span>PID Control</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- =================================================== -->
+                <!-- [PROJECT 2: PERSONAL - COMPLETED]                  -->
+                <!-- =================================================== -->
+                <div class="project-card" data-category="personal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class='bx bx-line-chart'></i>
+                            <span>MATLAB Simulation</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="#projects" class="project-link" title="Details">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badges">
+                            <span class="project-badge personal">Personal Project</span>
+                            <!-- [STATUS]: Completed -->
+                            <span class="status-badge completed"><i class='bx bx-check-circle'></i> Completed</span>
+                        </div>
+                        <h3>AC RLC Circuit Analysis & Fourier Tool</h3>
+                        <p>MATLAB-based analytical computational tool simulating transient response, impedance resonance, and FFT harmonic decomposition of RLC circuits.</p>
+                        <div class="project-tags">
+                            <span>MATLAB</span>
+                            <span>Simulink</span>
+                            <span>Circuit Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- =================================================== -->
+                <!-- [PROJECT 3: PERSONAL - ONGOING]                    -->
+                <!-- Contoh Proyek Ongoing (Sedang Berjalan)            -->
+                <!-- =================================================== -->
+                <div class="project-card" data-category="personal">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class='bx bx-microchip'></i>
+                            <span>Digital Logic</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="#projects" class="project-link" title="Details">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badges">
+                            <span class="project-badge personal">Personal Project</span>
+                            <!-- [STATUS]: 'ongoing' (Ubah jadi 'completed' jika sudah selesai) -->
+                            <span class="status-badge ongoing"><i class='bx bx-time-five'></i> Ongoing</span>
+                        </div>
+                        <h3>4-Bit ALU & Digital Counter System</h3>
+                        <p>Modular digital arithmetic logic unit (ALU) design with 7-segment display driver, 74HC series ICs, and Proteus simulation verification.</p>
+                        <div class="project-tags">
+                            <span>Digital Electronics</span>
+                            <span>Proteus</span>
+                            <span>Logic Gates</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- =================================================== -->
+                <!-- [PROJECT 4: ORGANIZATION - COMPLETED]              -->
+                <!-- =================================================== -->
+                <div class="project-card" data-category="organization">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class='bx bx-broadcast'></i>
+                            <span>IoT System</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="#projects" class="project-link" title="Details">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badges">
+                            <span class="project-badge organization">Organization / Team</span>
+                            <!-- [STATUS]: Completed -->
+                            <span class="status-badge completed"><i class='bx bx-check-circle'></i> Completed</span>
+                        </div>
+                        <h3>IoT Weather Station — UB EE Research</h3>
+                        <p>Collaborative telemetry project with Universitas Brawijaya EE students, utilizing ESP32, environmental sensors, MQTT protocol, and web dashboard.</p>
+                        <div class="project-tags">
+                            <span>ESP32</span>
+                            <span>MQTT</span>
+                            <span>Team Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- =================================================== -->
+                <!-- [PROJECT 5: ORGANIZATION - ONGOING]                -->
+                <!-- Contoh Proyek Tim Yang Masih Berjalan (Ongoing)    -->
+                <!-- =================================================== -->
+                <div class="project-card" data-category="organization">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class='bx bx-sun'></i>
+                            <span>Renewable Energy</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="#projects" class="project-link" title="Details">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badges">
+                            <span class="project-badge organization">Organization / Team</span>
+                            <!-- [STATUS]: Ongoing -->
+                            <span class="status-badge ongoing"><i class='bx bx-time-five'></i> Ongoing</span>
+                        </div>
+                        <h3>Dual-Axis Solar Tracker — Robotics Division</h3>
+                        <p>High-efficiency solar photovoltaic tracking mechanism designed with the student robotics division, utilizing LDR arrays and closed-loop servo actuators.</p>
+                        <div class="project-tags">
+                            <span>Arduino</span>
+                            <span>Robotics Club</span>
+                            <span>Solar Energy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- =================================================== -->
+                <!-- [PROJECT 6: ORGANIZATION - COMPLETED]              -->
+                <!-- =================================================== -->
+                <div class="project-card" data-category="organization">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class='bx bx-id-card'></i>
+                            <span>Smart Access</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link" title="Source Code">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="#projects" class="project-link" title="Details">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badges">
+                            <span class="project-badge organization">Organization / Team</span>
+                            <!-- [STATUS]: Completed -->
+                            <span class="status-badge completed"><i class='bx bx-check-circle'></i> Completed</span>
+                        </div>
+                        <h3>RFID Event Access System — HME UB</h3>
+                        <p>Digital check-in and attendance recording kiosk engineered for Electrical Engineering Student Association (HME FT-UB) seminars and events.</p>
+                        <div class="project-tags">
+                            <span>RFID / RC522</span>
+                            <span>Python GUI</span>
+                            <span>HME FT-UB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION: CERTIFICATES                                   -->
+    <!-- ======================================================= -->
+    <section class="section" id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Credentials & Courses</span>
+                <h2 class="section-title">Certificates</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="certificates-grid">
+                
+                <!-- Certificate 1 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class='bx bxs-certification'></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Embedded Systems & IoT Specialization</h3>
+                        <p class="certificate-issuer">
+                            <i class='bx bx-buildings'></i> University of California, Irvine / Coursera
+                        </p>
+                        <p class="certificate-date">
+                            <i class='bx bx-calendar'></i> January 2025
+                        </p>
+                        <a href="https://coursera.org" target="_blank" rel="noopener noreferrer" class="certificate-link">
+                            View Certificate <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class='bx bxs-certification'></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>MATLAB Onramp & Circuit Simulation</h3>
+                        <p class="certificate-issuer">
+                            <i class='bx bx-buildings'></i> MathWorks Academy
+                        </p>
+                        <p class="certificate-date">
+                            <i class='bx bx-calendar'></i> March 2025
+                        </p>
+                        <a href="https://matlabacademy.mathworks.com" target="_blank" rel="noopener noreferrer" class="certificate-link">
+                            View Certificate <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class='bx bxs-certification'></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>C++ Programming for Embedded Developers</h3>
+                        <p class="certificate-issuer">
+                            <i class='bx bx-buildings'></i> Udemy Certification
+                        </p>
+                        <p class="certificate-date">
+                            <i class='bx bx-calendar'></i> May 2025
+                        </p>
+                        <a href="https://udemy.com" target="_blank" rel="noopener noreferrer" class="certificate-link">
+                            View Certificate <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class='bx bxs-certification'></i>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>PCB Design Essentials with KiCad</h3>
+                        <p class="certificate-issuer">
+                            <i class='bx bx-buildings'></i> IEEE Student Branch
+                        </p>
+                        <p class="certificate-date">
+                            <i class='bx bx-calendar'></i> July 2025
+                        </p>
+                        <a href="https://ieee.org" target="_blank" rel="noopener noreferrer" class="certificate-link">
+                            View Certificate <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION: BLOG                                           -->
+    <!-- ======================================================= -->
+    <section class="section section-alt" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Articles & Engineering Notes</span>
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="blog-grid">
+                
+                <!-- Blog 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class='bx bx-book-open'></i>
+                        </div>
+                        <span class="blog-category">Tutorial</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class='bx bx-calendar'></i> Aug 18, 2025</span>
+                            <span><i class='bx bx-time'></i> 5 min read</span>
+                        </div>
+                        <h3>Understanding Thevenin & Norton Equivalent Circuits</h3>
+                        <p>A practical breakdown of circuit simplification theorems essential for electrical engineering students tackling complex DC and AC networks.</p>
+                        <a href="#blog" class="blog-read-more">
+                            Read More <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class='bx bx-chip'></i>
+                        </div>
+                        <span class="blog-category">Embedded</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class='bx bx-calendar'></i> Sep 02, 2025</span>
+                            <span><i class='bx bx-time'></i> 4 min read</span>
+                        </div>
+                        <h3>Interfacing Analog Sensors with ESP32 ADC</h3>
+                        <p>Overcoming ADC non-linearity in ESP32 microcontrollers using multi-point calibration, voltage dividers, and software smoothing filters.</p>
+                        <a href="#blog" class="blog-read-more">
+                            Read More <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class='bx bx-wrench'></i>
+                        </div>
+                        <span class="blog-category">Lab Guide</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class='bx bx-calendar'></i> Sep 08, 2025</span>
+                            <span><i class='bx bx-time'></i> 6 min read</span>
+                        </div>
+                        <h3>Essential Lab Instruments for 2nd-Year EE Students</h3>
+                        <p>How to properly calibrate an oscilloscope probe, interpret frequency spectra on signal generators, and avoid common measurement errors.</p>
+                        <a href="#blog" class="blog-read-more">
+                            Read More <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SECTION: CONTACT                                        -->
+    <!-- Direct contact info cards (No direct form submission)   -->
+    <!-- Twitter, Telegram, and Discord removed as requested     -->
+    <!-- ======================================================= -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Contact Information</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <p class="contact-description">
+                Interested in collaboration, engineering discussions, or project opportunities? 
+                Feel free to reach out directly through any of the channels below.
+            </p>
+
+            <!-- 
+                =======================================================
+                [CUSTOMIZE: DIRECT CONTACT CARDS]
+                Ganti alamat email, nomor WhatsApp, dan nomor telepon:
+                =======================================================
+            -->
+            <div class="contact-cards-grid">
+
+                <!-- 1. Email Card -->
+                <!-- Ganti 'youremail@student.ub.ac.id' dengan email Anda -->
+                <a href="mailto:youremail@student.ub.ac.id" class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>youremail@student.ub.ac.id</p>
+                    <span class="contact-card-action">Send Email <i class='bx bx-right-arrow-alt'></i></span>
+                </a>
+
+                <!-- 2. WhatsApp Card -->
+                <!-- Ganti '6281234567890' dengan nomor WhatsApp Anda (diawali kode negara 62) -->
+                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class='bx bxl-whatsapp'></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>+62 812 3456 7890</p>
+                    <span class="contact-card-action">Chat on WhatsApp <i class='bx bx-right-arrow-alt'></i></span>
+                </a>
+
+                <!-- 3. Phone Call Card -->
+                <!-- Ganti '+6281234567890' dengan nomor telepon Anda -->
+                <a href="tel:+6281234567890" class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class='bx bx-phone-call'></i>
+                    </div>
+                    <h3>Phone Call</h3>
+                    <p>+62 812 3456 7890</p>
+                    <span class="contact-card-action">Call Number <i class='bx bx-right-arrow-alt'></i></span>
+                </a>
+
+            </div>
+
+            <!-- 
+                =======================================================
+                [CUSTOMIZE: SOCIAL MEDIA PROFILES]
+                Ganti 'href' dengan tautan profil sosial media Anda
+                =======================================================
+            -->
+            <div class="contact-socials">
+                <h3>Connect on Social Networks</h3>
+                <div class="contact-social-links">
+                    
+                    <!-- GitHub Profile -->
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-social-card social-github">
+                        <i class='bx bxl-github'></i>
+                        <span>GitHub</span>
+                    </a>
+
+                    <!-- LinkedIn Profile -->
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-social-card social-linkedin">
+                        <i class='bx bxl-linkedin'></i>
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <!-- Instagram Profile -->
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-social-card social-instagram">
+                        <i class='bx bxl-instagram'></i>
+                        <span>Instagram</span>
+                    </a>
+
+                    <!-- YouTube Profile -->
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="contact-social-card social-youtube">
+                        <i class='bx bxl-youtube'></i>
+                        <span>YouTube</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Location Badge -->
+            <div class="contact-location">
+                <i class='bx bx-map-pin'></i>
+                <span>Department of Electrical Engineering, Faculty of Engineering, <strong>Universitas Brawijaya</strong> — Malang, East Java, Indonesia</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- FOOTER                                                  -->
+    <!-- ======================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <i class='bx bx-chip'></i> Farras
+                    </a>
+                    <p>Undergraduate Electrical Engineering Student at Universitas Brawijaya &amp; Researcher at Riset Teknologi &amp; Informasi. Focused on modern control systems, robotics, and embedded systems.</p>
+                </div>
+
+                <!-- Quick Navigation Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Socials -->
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Farras. All rights reserved. Designed for Electrical Engineering Portfolio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
